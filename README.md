@@ -16,6 +16,6 @@ Go into your project directory, or making a Tutorial project by lasif command,
 `lasif init_project Tutorial && cd Tutorial`  
 
 Then start the lasif server  
-`lasif server --open_to_outside`  
+`lasif serve --open_to_outside`  
 
 Ctrl+click the indicated url or directly putting `127.0.0.1:8008` on the url space of your web browser, will open the LASIF server GUI.  
