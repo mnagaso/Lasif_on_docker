@@ -5,6 +5,10 @@ This is the dockerfile to prepare an environment with the minimum dependency req
 ### to build and run the docker image
 `docker-compose up -d`
 
+### to use lasif GUI (not a server version)
+The command below is necessary to let docker using X window.  
+`xhost +local:docker`
+
 ### to attach (enter into) the docker container
 `docker-compose ps` to verify the name of running container, then  
 `docker attach NAME_OF_RUNNING_CONTAINER`  

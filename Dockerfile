@@ -45,7 +45,7 @@ RUN pip install \
 
 # install basemap
 RUN pip install \
-    pyproj \
+    pyproj==1.9.6 \
     Pillow \
     && wget https://github.com/matplotlib/basemap/archive/v1.1.0.tar.gz \
     && tar -zxvf v1.1.0.tar.gz \
