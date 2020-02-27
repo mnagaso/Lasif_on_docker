@@ -18,4 +18,11 @@ Go into your project directory, or making a Tutorial project by lasif command,
 Then start the lasif server  
 `lasif serve --open_to_outside`  
 
-Ctrl+click the indicated url or directly putting `127.0.0.1:8008` on the url space of your web browser, will open the LASIF server GUI.  
+Ctrl+click the indicated url or directly putting `127.0.0.1:8008` on the url space of your web browser, will open the LASIF server GUI. 
+
+
+
+### mounted directory
+The directory where containing the docker-compose.yml file is mounted as `/workspace` in the docker container.  
+Only the creation/modification/suppression on the mounted directory and subdirectries will be reflected in the host environment.  
+
