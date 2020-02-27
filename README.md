@@ -30,3 +30,10 @@ Ctrl+click the indicated url or directly putting `127.0.0.1:8008` on the url spa
 The directory where containing the docker-compose.yml file is mounted as `/workspace` in the docker container.  
 Only the creation/modification/suppression on the mounted directory and subdirectries will be reflected in the host environment.  
 
+
+### rebuild the image
+After adding some lines on Dockerfile, the docker image need to be rebuild by  
+`docker-compose up --build -d`  
+
+Sometimes the created files in the docker container may have permission issues while building the image.  
+If so, modify those permissions to `sudo chmod -R 777 TARGET_DIR_OR_FILE`.  
