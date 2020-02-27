@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  lasif_env:
+    build: 
+        network: host
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - ./:/workspace/
+    #command: "bash -c 'jupyter-lab --no-browser --ip=0.0.0.0 --port=8000 --allow-root --notebook-dir=/workspace --NotebookApp.token=\"\"'"
+    command: "bash"
+    tty: true
+    stdin_open: true
+    ports:
+      - 8008:8008
